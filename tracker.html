@@ -137,7 +137,7 @@
                         </svg>
                     </div>
                     <!-- Title -->
-                    <h3 class="text-2xl font-bold text-gray-900 text-center">South Sudan Animal Tracker Admin</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 text-center">South Sudan Animal Tracker System</h3>
                     <p class="text-sm text-gray-500 mt-1">Enter credentials to monitor the herd.</p>
                 </div>
                 <form id="loginForm" class="space-y-4">
@@ -285,7 +285,7 @@
                         
                     </p>
                      <p class="text-xs text-gray-500 mt-1">
-                        Designed and Developed by Eng: Sam. C. Atem.
+                        Designed and Developed by Eng: Sam. C. Atem
                         
                     </p>
                     <p class="text-xs text-gray-500 mt-1">
@@ -347,7 +347,7 @@
             
             // 1. Compare Username (Case-sensitive)
             if (usernameInput !== ADMIN_USERNAME) {
-                loginError.textContent = "Invalid username or password. Check case ('Admin') and ensure no extra spaces.";
+                loginError.textContent = "Invalid username or password. Check case username and ensure no extra spaces.";
                 loginError.classList.remove('hidden');
                 updateTrackerStatus("Admin login failed: Invalid username.");
                 return;
@@ -374,9 +374,9 @@
                 // Render cows
                 renderCows();
                 
-                showNotification("Login successful! Welcome to the Cattle Tracking Dashboard.", "success");
+                showNotification("Login successful! Welcome to the Cattle Tracking System.", "success");
             } else {
-                loginError.textContent = "Invalid password. Please ensure you entered 'admin123' and check for extra spaces.";
+                loginError.textContent = "Invalid password. Please ensure you entered correct password and check for extra spaces.";
                 loginError.classList.remove('hidden');
                 updateTrackerStatus("Admin login failed: Password mismatch.");
                 showNotification("Login failed. Please check your credentials.", "error");
@@ -822,6 +822,7 @@
 </body>
 
 </html>
+
 
 
 
